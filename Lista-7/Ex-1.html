@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/188/188918.png" type="image/x-icon">
+    <title>PokéInfo</title>
+    <style>
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp2432874.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            border: 25px solid #020000;
+            padding: 50px;
+            border-radius: 75%;
+            box-shadow: 0 0 10px #0000001a;
+            background-color: #ffffff;
+            height: 50%;
+        }
+
+        .pokemon-info {
+            text-align: center;
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+
+        .pokemon-info img.pokeball {
+            width: 90%;
+            height: auto;
+        }
+
+        .pokemon-info img.pokemon {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 60%;
+            max-height: 60%;
+        }
+
+        button {
+            background-color: #000000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: #e2e2e2;
+        }
+
+        .icon1{
+            width: 30px; 
+            height: 30px;
+            transform: rotate(-90deg);
+        }
+        
+        .icon2{
+            width: 30px; 
+            height: 30px;
+            transform: rotate(90deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <button id="prev-btn"><img class="icon1" src="https://cdn.icon-icons.com/icons2/851/PNG/512/Pokemon_Go_Arrow_icon-icons.com_67522.png"></button>
+        <div class="pokemon-info">
+            <img class="pokeball" src="https://gifs.eco.br/wp-content/uploads/2023/02/imagens-de-pokebola-aberta-png-2.png" alt="Pokeball">
+            <img id="pokemon-image" class="pokemon" src="" alt="Pokémon">
+            <h1 id="pokemon-name"></h1>
+            <p><span id="pokemon-id"></span></p>
+            <p><span id="pokemon-types"></span></p>
+        </div>
+        <button id="next-btn"><img class="icon2" src="https://cdn.icon-icons.com/icons2/851/PNG/512/Pokemon_Go_Arrow_icon-icons.com_67522.png"></button>
+
+        <script src="EX-1.js"></script>
+    </div>
