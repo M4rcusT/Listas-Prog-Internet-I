@@ -130,7 +130,7 @@
             background: rgba(255, 255, 255, 0.8);
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px; /* Diminui o tamanho do texto */
+            font-size: 14px;
         }
 
         #attempts-box {
@@ -138,7 +138,7 @@
         }
 
         #current-marker-box {
-            top: 10px; /* Coloca a caixa de marcação atual acima da de tentativas */
+            top: 10px;
         }
 
         #rules-popup {
@@ -194,7 +194,7 @@
 </head>
 <body>
     <div id="current-marker-box">Marcação: 1</div>
-    <div id="attempts-box">Tentativas Restantes: 7</div> <!-- Texto alterado para "Tentativas Restantes" -->
+    <div id="attempts-box">Tentativas Restantes: 7</div>
     <div id="game-container">
         <div id="airplane"></div>
         <div id="markers">
@@ -214,14 +214,14 @@
         <input type="text" id="guess-input" placeholder="Digite o número">
         <button id="submit-button">Enviar</button>
         <button id="reset-button">Reiniciar</button>
-        <button id="rules-button">Regras</button> <!-- Novo botão "Regras" -->
+        <button id="rules-button">Regras</button>
         <p id="feedback"></p>
     </div>
     <div id="volume-container">
         <input type="range" id="volume-slider" min="0" max="100" value="10" disabled>
-        <span id="volume-value">10</span> <!-- Valor inicial alterado para 10 -->
+        <span id="volume-value">10</span>
     </div>
-    <div id="overlay"></div> <!-- Overlay para o pop-up -->
+    <div id="overlay"></div> 
     <div id="rules-popup">
         <h2>Regras do Jogo</h2>
         <ul>
