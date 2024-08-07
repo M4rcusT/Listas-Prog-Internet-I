@@ -18,26 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let volume = 10; // Volume inicial
 
     function generateRandomNumber() {
-        return Math.floor(Math.random() * 50) + 1; // Gera um número entre 1 e 50
+        return Math.floor(Math.random() * 50) + 1;
     }
 
     function moveAirplane() {
-        if (currentMarker < markers.length) { // Ajuste para mover até a última marcação
+        if (currentMarker < markers.length) {
             const marker = markers[currentMarker];
             const markerRect = marker.getBoundingClientRect();
             const gameContainerRect = document.getElementById('game-container').getBoundingClientRect();
-            airplane.style.left = `${markerRect.left - gameContainerRect.left}px`; // Ajuste da posição horizontal
+            airplane.style.left = `${markerRect.left - gameContainerRect.left}px`;
 
-            // Atualiza a caixa de marcação atual
             updateCurrentMarker();
 
-            // Se chegamos na última marcação, não avançar mais
             if (currentMarker === markers.length - 1) {
                 setTimeout(() => {
                     feedback.textContent = "Parabéns! Você completou o jogo.";
                     submitButton.disabled = true;
                     guessInput.disabled = true;
-                }, 500); // Pequeno atraso para o avião alcançar a última marcação
+                }, 500);
             }
         }
     }
@@ -77,17 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (guess === randomNumber) {
             feedback.textContent = "Você acertou!";
-            volume += 10; // Aumenta o volume em 10
-            updateVolume(); // Atualiza o slider e o texto
+            volume += 10;
+            updateVolume();
             currentMarker++;
-            if (currentMarker < markers.length) { // Continua até a última marcação
+            if (currentMarker < markers.length) { 
                 randomNumber = generateRandomNumber();
-                attempts = 7; // Resetando tentativas para 7
+                attempts = 7; 
                 updateAttempts();
                 updateCurrentMarker();
                 moveAirplane();
             } else {
-                moveAirplane(); // Move o avião até a última marcação
+                moveAirplane(); 
             }
         } else {
             attempts--;
@@ -135,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     guessInput.addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Impede o comportamento padrão do Enter
-            handleGuess(); // Chama a função de envio
+            event.preventDefault(); 
+            handleGuess(); 
         }
     });
 
@@ -145,8 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rulesButton.addEventListener('click', showRules);
     closeRulesButton.addEventListener('click', closeRules);
 
-    // Inicializa o slider e o valor exibido
-    updateVolume(); // Define o volume inicial
-    updateAttempts(); // Define as tentativas restantes iniciais
+    updateVolume();
+    updateAttempts(); 
     moveAirplane();
 });
