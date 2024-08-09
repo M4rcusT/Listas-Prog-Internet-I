@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-4 Lista 3</title>
+    
+    <style>
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            background-color: rgb(152, 172, 179);
+            height: 20vh;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(152, 172, 179);
+            height: 20vh;
+            text-align: center;
+        }
+
+        .main-item {
+            border-radius: 6px;
+            width: 20vw;
+            height: 20vh;
+            padding: 20px;
+        }
+
+        .item1 { background-color: rgb(235, 74, 74); }
+        .item2 { background-color: rgb(100, 243, 188); }
+        .item3 { background-color: rgb(161, 141, 250); }
+        .item4 { background-color: rgb(114, 72, 143); }
+        .item5 { background-color: rgb(221, 172, 80); }
+        .item6 { background-color: rgb(223, 81, 241); }
+        .item7 { background-color: rgb(83, 197, 197); }
+        .item8 { background-color: rgb(213, 223, 74); }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'item1 item2 item3 item4'
+                'item5 item6 item7 item8'
+                'footer footer footer footer';
+            gap: 10px;
+            padding: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="grid-container">
+        <div class="header">
+            <h2>Ionic Technologies</h2>
+        </div>
+        <div class="main-item item1">
+            <h1>Angular</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item2">
+            <h1>Ionic Native</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item3">
+            <h1>TypeScript</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item4">
+            <h1>Sass</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item5">
+            <h1>HTML 5</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item6">
+            <h1>Ionic CLI</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item7">
+            <h1>Stencil</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="main-item item8">
+            <h1>Web Components</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

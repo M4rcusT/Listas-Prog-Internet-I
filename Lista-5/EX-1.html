@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 5 Atividade de 1 á 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container, .table1, .switch2, .colors, .table2 {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .fill, .switch, .bulb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .bulb img {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .switch2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .white-background {
+            background-color: white !important;
+        }
+
+        .table2 tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"], input[type="color"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="fill">
+            <button id="btnFill">Fill</button>
+            <p id="text1"></p>
+        </div>
+
+        <div class="switch">
+            <p id="text2">Esquerda</p>
+            <button id="btnSw1">Switch</button>
+            <p id="text3">Direita</p>
+        </div>
+
+        <div class="bulb">
+            <img id="imagem" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulb">
+            <button id="btnSw2">Switch</button>
+        </div>
+    </div>
+
+    <div class="table1">
+        <table>
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+            </tr>
+            <tr>
+                <td>line1</td>
+                <td>line1</td>
+                <td>line1</td>
+            </tr>
+            <tr>
+                <td>line2</td>
+                <td>line2</td>
+                <td>line2</td>
+            </tr>
+            <tr>
+                <td>line3</td>
+                <td>line3</td>
+                <td>line3</td>
+            </tr>
+            <tr>
+                <td>line4</td>
+                <td>line4</td>
+                <td>line4</td>
+            </tr>
+            <tr>
+                <td>line5</td>
+                <td>line5</td>
+                <td>line5</td>
+            </tr>
+            <tr>
+                <td>line6</td>
+                <td>line6</td>
+                <td>line6</td>
+            </tr>
+            <tr>
+                <td>line7</td>
+                <td>line7</td>
+                <td>line7</td>
+            </tr>
+            <tr>
+                <td>line8</td>
+                <td>line8</td>
+                <td>line8</td>
+            </tr>
+            <tr>
+                <td>line9</td>
+                <td>line9</td>
+                <td>line9</td>
+            </tr>
+            <tr>
+                <td>line10</td>
+                <td>line10</td>
+                <td>line10</td>
+            </tr>
+        </table>
+        <button id="nthC">Zebrar</button>
+    </div>
+
+    <div class="switch2">
+        <input type="text" name="textSwitch" id="textSw">
+        <button id="btnSw3">Switch</button>
+        <p id="text4">Texto genérico</p>
+        <input type="color" name="textColor" id="txtColor">
+    </div>
+
+    <div class="colors">
+        <h1 id="title">Título</h1>
+        <p id="p1">parágrafo 1</p>
+        <p id="p2">parágrafo 2</p>
+        <p id="p3">parágrafo 3</p>
+        <button id="btnColor">Colors</button>
+    </div>
+
+    <div class="table2">
+        <table id="table2">
+            <tr>
+                <th>nome</th>
+                <th>numero</th>
+            </tr>
+        </table>
+        <div>
+            <button id="add">add</button>
+            <button id="del">del</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

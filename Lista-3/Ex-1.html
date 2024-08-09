@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-1 Lista 3</title>
+
+    <style>
+
+        .header {
+            grid-area: header;
+            border-radius: 5px;
+            background-color: rgb(245, 236, 236);
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            border-radius: 5px;
+            width: 22vw;
+            background-color: rgb(245, 236, 236);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .main-content {
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 'item1 item2 item3';
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'sidebar header header header'
+                'sidebar main main main';
+            gap: 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .hero-text {
+            text-align: justify;
+            margin: 0 50px;
+        }
+
+        .primary-button {
+            margin-top: 20px;
+            background-color: rgb(68, 68, 218);
+            color: white;
+            border-radius: 5px;
+            padding: 12px;
+            border: none;
+            margin-left: 50px;
+            text-align: left;
+        }
+
+        .secondary-button {
+            margin-top: 20px;
+            background-color: rgb(199, 199, 199);
+            border-radius: 5px;
+            padding: 6px;
+            border: none;
+            text-align: left;
+        }
+
+        .sidebar-link {
+            display: block;
+            margin-left: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 style="margin-left: 50px;">Hello, World!</h1>
+            <div style="text-align: center;">
+                <p class="hero-text">This is a template for a simple marketing or informational website. It includes a large
+                    callout called the hero unit and three supporting pieces of content. Use it as a starting point to
+                    create something more unique.</p>
+            </div>
+            <button class="primary-button">Learn More</button>
+        </div>
+
+        <div class="sidebar">
+            <p class="sidebar-link sidebar-link-primary">SIDEBAR</p>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <br>
+            <p class="sidebar-link sidebar-link-primary">SIDEBAR</p>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <br>
+            <p class="sidebar-link sidebar-link-primary">SIDEBAR</p>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+            <a class="sidebar-link" href="#">Link</a>
+        </div>
+
+        <div class="main-content">
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

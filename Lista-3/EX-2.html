@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-2 Lista 3</title>
+    
+    <style>
+
+        .header {
+            grid-area: header;
+            border-radius: 5px;
+            background-color: rgb(245, 236, 236);
+        }
+
+        .footer {
+            grid-area: footer;
+            padding-top: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .main-content {
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+                'content1 content2 content3';
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'main main main'
+                'footer footer footer';
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .hero-text {
+            text-align: justify;
+            margin: 0 50px;
+        }
+
+        .primary-button {
+            margin-top: 20px;
+            background-color: rgb(68, 68, 218);
+            color: white;
+            border-radius: 5px;
+            padding: 12px;
+            border: none;
+            margin-left: 50px;
+            text-align: left;
+        }
+
+        .secondary-button {
+            margin-top: 20px;
+            background-color: rgb(199, 199, 199);
+            border-radius: 5px;
+            padding: 6px;
+            border: none;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1 style="margin-left: 50px;">Hello, World!</h1>
+            <div style="text-align: center;">
+                <p class="hero-text">This is a template for a simple marketing or informational website. It includes a large
+                    callout called the hero unit and three supporting pieces of content. Use it as a starting point to
+                    create something more unique.</p>
+            </div>
+            <button class="primary-button">Learn More</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+            <div class="content-block">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="secondary-button">View details</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © Company 2012
+        </div>
+    </div>
+
+</body>
+
+</html>
