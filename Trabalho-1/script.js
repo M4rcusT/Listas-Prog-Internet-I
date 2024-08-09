@@ -93,9 +93,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (attempts > 0) {
                 feedback.textContent = guess > randomNumber ? "Muito alto!" : "Muito baixo!";
             } else {
-                feedback.textContent = "Você perdeu! O jogo acabou.";
-                submitButton.disabled = true;
-                guessInput.disabled = true;
+                if (currentMarker === 0) {
+                    feedback.textContent = "Você perdeu! O jogo acabou.";
+                    submitButton.disabled = true;
+                    guessInput.disabled = true;
+                } else {
+                    currentMarker--; // Volta uma posição
+                    volume -= 10; // Diminui o volume em 10
+                    feedback.textContent = "Você errou todas as tentativas! O avião voltou uma posição e o volume diminuiu.";
+                    randomNumber = generateRandomNumber();
+                    attempts = 7;
+                    updateAttempts();
+                    updateCurrentMarker();
+                    updateVolume(); // Atualiza o volume na barra de som
+                    moveAirplane();
+                }
             }
         }
 
